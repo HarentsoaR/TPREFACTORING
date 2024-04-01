@@ -51,4 +51,14 @@ public class Humain {
     public String toString() {
         return "Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age;
     }
+    
+ // Méthode pour manger
+    public void manger() {
+        System.out.println(nom + " est en train de manger.");
+    }
+
+    // Méthode pour boire
+    public void boire() {
+        System.out.println(nom + " est en train de boire.");
+    }
 }
