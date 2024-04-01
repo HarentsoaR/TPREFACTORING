@@ -4,6 +4,7 @@ public class Humain implements Consommation {
     protected String nom;
     protected String prenom;
     protected int age;
+    protected Humain ami;
 
     // Constructeur par défaut
     public Humain() {
@@ -60,6 +61,12 @@ public class Humain implements Consommation {
     @Override
     public void boire() {
         System.out.println(nom + " est en train de boire.");
+    }
+ // Méthode pour établir une amitié avec un autre humain
+    public void ami(Humain autreHumain) {
+        this.ami = autreHumain;
+        autreHumain.ami = this;
+        System.out.println(this.nom + " et " + autreHumain.nom + " sont maintenant amis.");
     }
     public void ami(Humain humain, int dureeAmitie) {
         System.out.println(this.nom + " est ami avec " + humain.nom + " pour " + dureeAmitie + " jours.");
