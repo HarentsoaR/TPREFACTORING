@@ -9,6 +9,6 @@ public static void main(String[] args) {
         Homme homme = new Homme("Jean", "Dupont", 30);
         Femme femme = new Femme("Marie", "Durand", 25);
 
-        femme.ami(homme);
+        femme.ami(homme, 150);
     }
 }
