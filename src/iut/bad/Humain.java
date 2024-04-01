@@ -40,4 +40,15 @@ public class Humain {
     public void setAge(int age) {
         this.age = age;
     }
+    
+ // Méthode pour afficher les détails
+    public void details() {
+        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age);
+    }
+    
+ // Surcharge de la méthode toString()
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age;
+    }
 }
